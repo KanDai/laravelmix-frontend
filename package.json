@@ -1,0 +1,36 @@
+{
+  "name": "laravelmix-template",
+  "version": "1.0.0",
+  "description": "Laravelmix Frontend Template",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "KanDai",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KanDai/laravelmix-template"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^5.1.4",
+    "css-declaration-sorter": "^3.0.1",
+    "css-mqpacker": "^6.0.2",
+    "import-glob-loader": "^1.1.0",
+    "laravel-mix": "^2.1.11",
+    "prettier": "^1.11.1",
+    "prettier-loader": "^2.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "vue": "^2.5.16"
+  }
+}
