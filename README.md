@@ -27,7 +27,7 @@
 `resources/js` 直下の `*.js` ファイルがコンパイル対象になります。
 `resources/js/xxxx` のようなディレクトリ内のファイルは対象にならないので、インクルード用のファイルなどはディレクトリ内に配置してください。Laravel Mixの機能で、`.vue` ファイルのコンパイルもしてくれます。
 
-JSのライブラリは `npm install` すると `vue` / `axios` / `jquery` / `lodash` がインストールされるようになってます。
+JSのライブラリは `npm install` すると `vue` / `axios` / `jquery` / `lodash` がインストールされるようになってます。
 
 ### SourceMap生成(開発ビルド時のみ)
 
